@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>To-Do List</h1>
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+      <div class="form">
+        <input type="text" id="taskInput" placeholder="Enter your task" />
+        <select id="priority">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <input type="date" id="deadline" />
+        <button id="addTaskBtn">Add Task</button>
+        <button id="sortTasksBtn">Sort by Priority</button>
+      </div>
+      <div class="progress">
+        <p><span id="completedCount">0</span> / <span id="totalCount">0</span> tasks completed</p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Deadline</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2025 Professional To-Do List</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
